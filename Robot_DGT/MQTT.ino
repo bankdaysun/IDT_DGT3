@@ -4,13 +4,13 @@
 WiFiClient wificlient;
 PubSubClient mqttclient(wificlient);
 
-const char *ssid = "kiangpc";
-const char *password = "37511900";
+const char *ssid = "***********";
+const char *password = "***********";
 
 const char *mqtt_broker = "broker.emqx.io";
-const char *topic = "DTW";
+const char *topic = "***********";
 const int mqtt_port = 1883;
-const char *mqtt_client_id = "DTW1";
+const char *mqtt_client_id = "***********";
 
 #define BUZZER_PIN 18
 #define LED_PIN 2
@@ -93,3 +93,4 @@ void MQTT_setup() {
 void MQTT_run() {
   mqttclient.loop();
 }
+
